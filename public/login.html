@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script type="javascript/css"></script>
+
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="loginsignup.css">
+  <ul class="active" >
+      <img src="images\header.jpg"   alt="icon" style="height: 2%;width:100%;">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="aboutproject.html">About Project</a></li>
+    <li><a href="aboutus.html">Meet our Team</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</head>
+
+<body>
+  <form action="/sign_in" method ="POST">
+    <div class="imgcontainer">
+      <p>Login</p>
+    	<div>
+         <!--<label for="name"><b>Email</b></label><br>--> 
+          <input type="text" placeholder="Enter E-Mail" name="email" id="email" required>
+      </div>
+      <div>
+          <!--<label for="psw"><b>Password</b></label><br>-->
+          <input type="password" placeholder="Enter Password" name="password" id="password" required>
+      </div>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+      <div>
+          <button type="submit">Login</button>
+      </div> 
+    </div>
+  </form>
+
+</body>
+</html>

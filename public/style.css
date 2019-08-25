@@ -1,0 +1,180 @@
+ div.container{
+                    max-width: 100%;
+                    border:5;
+                    margin:black;
+                    color:green;
+                    
+                    
+                    top:8%;
+                    display: block;
+                    position: relative;
+                    border-radius: 12px;
+                    border-style: groove;
+                    border-color: lightgrey;
+                    border-width: 5px solid;
+                    z-index: 1000;
+                    padding-top: 0px;
+
+                    }
+  header,footer,nav,div,{
+
+  padding-left: 2px;
+  padding-right: 2px;
+   color:black;
+   text-align: center;
+   clear: both;
+   z-index: 1000;
+  
+
+
+  }
+  header{
+    background-image: url(hdrback.jpg);
+    position: relative;
+    display: inline-block;
+    background-position: center;
+    -moz-background-size:cover;
+    background-size:cover;
+     -o-background-size:cover;
+     height: 200px;
+     width: 80%;
+     background-color: lightblue;
+    
+
+  }
+  header a{
+
+   background-color:#333;
+   color:yellow;
+   text-decoration: none;
+   font-style: bold italic;
+    align-items: center;
+  
+
+  }
+  
+  footer a{
+   text-decoration: none;
+   padding :12px 15px;
+   font-family: arial bold;
+   font-size: 18px;
+   align-items: center;
+   color:black;
+   background-color: green;
+
+}
+ .floatingLeft {
+   float: left;
+}
+
+
+   .topnav a {
+  float: left;
+  color: white;
+  text-align: left;
+  padding: 15px 20px;
+  text-decoration:none;
+  font-size: 18px;
+  align-items: left;
+  border-right: 2px solid grey;
+  background-color: #333;
+  font-family: arial ;
+
+
+}
+.topnav a.active{
+   background-color: green;
+   color:white;
+   text-decoration: none;
+
+}
+
+.topnav a:hover{
+  background-color: purple;
+  transition: 0.8s all;
+  text-transform: uppercase;
+
+}
+
+.topnav img{
+  float: left;
+  width: 25%;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+
+
+header img{
+   border-radius:50px; 
+   float:left
+   color:purple;
+   vertical-align: middle;
+   width:100%;
+   clear: both;
+   border-color: black;   
+}
+
+  .sidenav ul{
+	list-style-type: : none;
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	color: white;
+	
+	border-color: black;
+	line-height: 20px;
+
+}
+  .sidenav li{
+	display: block;
+	width: 100%;
+
+
+
+}
+   .sidenav a{
+	text-decoration: none;
+	color: white;
+	font-family: arial;
+  font-size: 18px;
+	display: block;
+	padding: 15px 20px;
+	border-bottom: 1px solid black;
+	text-align: center;
+  background-color: chocolate;
+
+	
+}
+
+.sidenav a:active{
+  background-color: #333;
+  color: white;text-decoration: none;
+}
+
+.sidenav a:hover{
+  background-color: #333;
+  transition: 0.8s all;
+  text-transform: uppercase;
+
+}
+
+}
+
+
+footer a:active{
+  background-color: purple;
+  color: black;text-decoration: none;
+}
+
+footer a:hover{
+  background-color: purple;
+  transition: 0.4s all;
+  text-transform: uppercase;
+
+}

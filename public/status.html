@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Status</title>
+	<script src="../index.js"></script>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<ul class="active" >
+		<img src="images\header.jpg"   alt="icon" style="height: 2%;width:100%;">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="aboutproject.html">About us</a></li>
+		<li><a href="aboutus.html">Meet our Team</a></li>
+  		<li><a href="contactus.html">Contact Us</a></li>
+		<li style="float:right"><a href="/logout">Log Out</a></li>
+	</ul>
+</head>
+<body>
+	
+	<script>
+		var socket = io.connect('http://127.0.0.1:3000'); //connect to server
+		socket.on('data', function(data) { //As a temp data is received
+				console.log(data.id);
+				document.getElementById('id').innerHTML = data.id;
+				document.getElementById('distance').innerHTML = data.dustbin_level+" cm";
+				document.getElementById('load').innerHTML = data.dustbin_load+" Kg";
+				if (data.dustbin_level>28 && data.dustbin_level<50 && data.dustbin_load>0) {
+					document.getElementById('image').src="images/10.png";
+				}
+				if (data.dustbin_level>20 && data.dustbin_level<28 && data.dustbin_load>1) {
+					document.getElementById('image').src="images/25.png";
+				}
+				if (data.dustbin_level>13 && data.dustbin_level<20 && data.dustbin_load>5) {
+					document.getElementById('image').src="images/50.png";
+				}
+				if (data.dustbin_level>8 && data.dustbin_level<13 && data.dustbin_load>10) {
+					document.getElementById('image').src="images/75.png";
+				}
+				if (data.dustbin_level>2 && data.dustbin_level<8 && data.dustbin_load>12) {
+					document.getElementById('image').src="images/85.png";
+				}
+				if (data.dustbin_level>35) {
+					document.getElementById('image').src="images/dooropen.png";
+				}
+		})
+	</script>
+	<h1>Smart Garbage Monitoring System</h1>
+	<div class="block">
+		<img id="image" src="images\10.png" height="220" width="150" class="alignment" id="dustbin1_level">
+		<table class="table">
+			<tr>
+				<td><b>Dustbin Id : </b></td>
+				<td style="text-align: right" id="id"></td>
+			</tr>			
+			<tr>
+				<td><b>Dustbin Level : </b></td>
+				<td style="text-align: right" id="distance"></td>
+						
+			</tr>
+			<tr>
+				<td><b>Dustbin Load : </b></td>
+				<td style="text-align: right" id="load"></td>
+			</tr>
+		</table>	
+	</div>
+
+	<div class="block">
+		<img src="images\25.png" height="220" width="150" class="alignment" id="dustbin1_level">
+		<table class="table">
+			<tr>
+				<td><b>Dustbin Id : </b></td>
+				<td style="text-align: right"><b>11</b></td>
+						
+			</tr>
+			<tr>
+				<td><b>Dustbin Level : </b></td>
+				<td style="text-align: right"><b>15 cm</b></td>
+						
+			</tr>
+			<tr>
+				<td><b>Dustbin Load : </b></td>
+				<td style="text-align: right"><b>2.5 Kg</b></td>
+			</tr>
+		</table>	
+	</div>
+		
+	<div class="button">
+		<p style="text-align: center">
+			<a href="add_dustbin.html"><b>Add More..</b></a>
+		</p>
+	</div>
+</body>
+</html>

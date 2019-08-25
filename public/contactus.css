@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(Picture2.png)
+
+  
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .column.middle {
+        width: 80%;
+      padding: 5px;
+      color:solid;
+      font-size: 14pt;
+      display: inline-block;
+      vertical-align:top;
+      margin-left:100px;
+      border:2px solid;
+      border-radius:10px;
+    
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  h1{
+      border-style: solid;
+      text-align: center;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      border-width: 2px;
+      background-color: #228B22;
+      color: white;
+  }
+  body{
+      background-color:  #ecf0f1 
+  }
+  .alignment {
+    margin-left:80px;
+    margin-right: 80px;
+    width: 40%;
+  }
+  .button{
+      
+      padding: 12px;
+      color: white;
+      margin-left:80px;
+      background-color: rgb(53, 224, 53);
+      vertical-align: bottom;
+      display: inline-block;
+  }
+  .block{
+      border:2px solid black;
+      border-radius: 2px;
+      vertical-align: top;
+      width: 20%;
+      display: inline-block;
+      margin-left:90px;
+  }
+  .table{
+      background-color:#25e72b  ;
+      border:1px solid black;
+      width: 100%;
+  }
+  
+  h2{
+      border-style: solid;
+      text-align: center;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      border-width: 2px;
+      background-color: #228B22;
+      color: white;
+  }
+
+
+ #pic{
+     display: inline;
+     height:30%; 
+     width:32%;
+     margin:6px;
+ 
+ a:hover,a:active{
+     background-color:skyblue;
+ }
+ #txt{
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+ }
+.inner1{
+	width: 30%;
+    height: 600px;
+    background-color:whitesmoke ;
+    display: inline-block;
+    overflow: hidden;
+    float:left;
+    text-align: center;
+    }
+.inner{
+	width: 70%;
+    height: 600px;
+    background-color: navy;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 0.3;
+    text-align: justify;
+   background-color:white;
+    color: white;
+    float: left;
+}
+#iimg{
+
+    height: 35%;
+    width: 30%;
+}

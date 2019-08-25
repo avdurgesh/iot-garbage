@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title> add dustbin </title>
+    <link rel="stylesheet" type="text/css" href="status.css">
+    <h1>Smart Garbage Monitoring System</h1>
+</head>
+    <body>
+        <p><strong>Add New Dustbin</strong><br> <strong>Details of New Dustbin</strong></p>
+        <form action="/submit" method="POST">
+            <fieldset>
+                <label>Id: </label>
+                <input type="number" id="id" name="dustbin_id" autofocus />
+                <br/>
+                <label>Dustbin Location: </label>
+                <input type="text" id="location" name="location"  />
+                <br/>
+                <label>Dustbin Area: </label>
+                <input type="text" id="area" name="area" />
+                <br/>
+                <a href="addsuccess.html"><input type="submit" value="Submit" /></a>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<script type="javascript/css"></script>
+
+<head>
+	<title>Sign Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="loginsignup.css">
+	<ul class="active" >
+		<img src="images\header.jpg"   alt="icon" style="height: 2%;width:100%;">
+  		<li><a href="home.html">Home</a></li>
+		<li><a href="aboutproject.html">About Us</a></li>
+		<li><a href="aboutus.html">Meet our Team</a></li>
+  		<li><a href="contactus.html">contact Us</a></li>
+  		<li style="float:right"><a href="login.html">Login</a></li>
+	</ul>
+</head>
+<body>
+  <div class="imgcontainer">
+  	<form action="/sign_up" method="post" name="myForm">
+   		<fieldset>
+   			<legend><b>Sign up</b></legend>
+    		<div>
+          		<label for="name"><b>Full Name</b></label>
+          		<input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+      		</div>
+      		<div>
+          		<label for="email"><b>E-Mail ID </b></label>
+          		<input type="text" placeholder="Enter E-Mail ID" name="email" id="email" required>
+      		</div>
+      		<div >
+          		<label for="phone"><b>Phone No.</b></label>
+          		<input type="text" placeholder="Enter Phone Number" name="phone" id = "phone" required>
+      		</div>
+      		<div>
+          		<label for="psw"><b>Password</b></label>
+          		<input type="password" placeholder="Enter Password" name="password" id = "password" required>
+      		</div>
+      		<div>
+          		<button type="submit">Sign Up</button>
+      		</div>
+   		</fieldset>
+   		
+  </form>
+</div>
+</body>
+</html>
